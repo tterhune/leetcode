@@ -19,7 +19,7 @@
 // -104 <= nums[i] <= 104
 // nums is sorted in non-decreasing order.
 
-class Solution {
+class SortedSquares {
     public int[] sortedSquares(int[] nums) {
         
         int [] a = new int[nums.length];
