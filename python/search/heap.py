@@ -16,5 +16,5 @@ if __name__ == '__main__':
         t = case[1]
 
         print(f'search for {t} in {a}')
-        result = binary_search(a, t)
-        assert result == r
+        # result = binary_search(a, t)
+        # assert result == r

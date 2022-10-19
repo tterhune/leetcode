@@ -1,16 +1,4 @@
 # -*- coding: utf-8 -*-
-##########################################################################
-#
-# Copyright (C) 2022 Hewlett Packard Enterprise Development LP
-# All Rights Reserved.
-#
-# The contents of this software are proprietary and confidential
-# to the Hewlett Packard Enterprise Development LP.  No part of this
-# program may be photocopied, reproduced, or translated into another
-# programming language without prior written consent of the
-# Hewlett Packard Enterprise Development LP.
-#
-##########################################################################
 
 def insertion_sort(array):
     # time  => O(n^2)
@@ -28,8 +16,13 @@ def insertion_sort(array):
 
     return array
 
-
 if __name__ == '__main__':
-    sorted_list = insertion_sort([8, 5, 2, 3, 9, 7, 5, 1])
-    print(f'{sorted_list}')
+    test = [
+        ([3, 1, 2, 8], [1, 2, 3, 8]),
+        ([16, -8, 2, 99, 6], [-8, 2, 6, 16, 99]),
+    ]
 
+    for t in test:
+        result = insertion_sort(t[0])
+        print(f'result => {result}')
+        assert result == t[1]
